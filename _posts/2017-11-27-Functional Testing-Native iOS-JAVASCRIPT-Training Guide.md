@@ -22,13 +22,13 @@ level4: Training Guide
 <p class="training-data__topics-title">Covered topics</p>
 <div class="training-data__topics-row">
 <div class="training-data__topics-img">
-<img src="/images/training/icon-book.png" srcset="/images/training/icon-book@2x.png 2x, /images/training/icon-book@3x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-book.png" srcset="{{site.baseurl}}/images/training/icon-book%402x.png 2x, {{site.baseurl}}/images/training/icon-book%403x.png 3x" />
 </div>
 <p class="training-data__topics-text">Setup iOS app test on local machine</p>
 </div>
 <div class="training-data__topics-row">
 <div class="training-data__topics-img">
-<img src="/images/training/icon-book.png" srcset="/images/training/icon-book@2x.png 2x, /images/training/icon-book@3x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-book.png" srcset="{{site.baseurl}}/images/training/icon-book%402x.png 2x, {{site.baseurl}}/images/training/icon-book%403x.png 3x" />
 </div>
 <p class="training-data__topics-text">Setup iOS app test on Sauce Labs</p>
 </div>
@@ -53,13 +53,13 @@ level4: Training Guide
 <p class="training-data__topics-title">Covered topics</p>
 <div class="training-data__topics-row">
 <div class="training-data__topics-img">
-<img src="/images/training/icon-book.png" srcset="/images/training/icon-book@2x.png 2x, /images/training/icon-book@3x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-book.png" srcset="{{site.baseurl}}/images/training/icon-book%402x.png 2x, {{site.baseurl}}/images/training/icon-book%403x.png 3x" />
 </div>
 <p class="training-data__topics-text">Execution commands</p>
 </div>
 <div class="training-data__topics-row">
 <div class="training-data__topics-img">
-<img src="/images/training/icon-book.png" srcset="/images/training/icon-book@2x.png 2x, /images/training/icon-book@3x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-book.png" srcset="{{site.baseurl}}/images/training/icon-book%402x.png 2x, {{site.baseurl}}/images/training/icon-book%403x.png 3x" />
 </div>
 <p class="training-data__topics-text">Understand tests framework structure</p>
 </div>
@@ -84,13 +84,13 @@ level4: Training Guide
 <p class="training-data__topics-title">Covered topics</p>
 <div class="training-data__topics-row">
 <div class="training-data__topics-img">
-<img src="/images/training/icon-book.png" srcset="/images/training/icon-book@2x.png 2x, /images/training/icon-book@3x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-book.png" srcset="{{site.baseurl}}/images/training/icon-book%402x.png 2x, {{site.baseurl}}/images/training/icon-book%403x.png 3x" />
 </div>
 <p class="training-data__topics-text">Desired Capabilities</p>
 </div>
 <div class="training-data__topics-row">
 <div class="training-data__topics-img">
-<img src="/images/training/icon-book.png" srcset="/images/training/icon-book@2x.png 2x, /images/training/icon-book@3x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-book.png" srcset="{{site.baseurl}}/images/training/icon-book%402x.png 2x, {{site.baseurl}}/images/training/icon-book%403x.png 3x" />
 </div>
 <p class="training-data__topics-text">Native app locators</p>
 </div>
@@ -115,7 +115,7 @@ level4: Training Guide
 <p class="training-data__topics-title">Covered topics</p>
 <div class="training-data__topics-row">
 <div class="training-data__topics-img">
-<img src="/images/training/icon-book.png" srcset="/images/training/icon-book@2x.png 2x, /images/training/icon-book@3x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-book.png" srcset="{{site.baseurl}}/images/training/icon-book%402x.png 2x, {{site.baseurl}}/images/training/icon-book%403x.png 3x" />
 </div>
 <p class="training-data__topics-text">Trouble shooting tips</p>
 </div>
