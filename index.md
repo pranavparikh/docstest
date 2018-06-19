@@ -36,11 +36,11 @@ layout: default
 	{% for prop in site.data.nav %}
 	<div class="carousel__card-bg">
 		<div class="carousel__card-fg">
-			<img src="{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard.png"
-				 srcset="{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@2x.png 2x,
-				 		 {{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@3x.png 3x"
-				 onerror="this.src='/images/fleets/default-placard.png';
-						  this.srcset='/images/fleets/default-placard@2x.png 2x, /images/default-placard@3x.png 3x'"
+			<img src="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard.png"
+				 srcset="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@2x.png 2x,
+				 		 {{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@3x.png 3x"
+				 onerror="this.src='{{site.baseurl}}/images/fleets/default-placard.png';
+						  this.srcset='{{site.baseurl}}/images/fleets/default-placard@2x.png 2x, {{site.baseurl}}/images/default-placard@3x.png 3x'"
 				 class="carousel__gear" />
 		</div>
 		<h3 class="carousel__title">{{prop.title}}</h3>
@@ -48,7 +48,7 @@ layout: default
 		<p class="carousel__intro line-clamp">{% include {{prop.title | remove: " "}}.ext %}</p>
 		{% endif %}
 		{% for sublevel in prop.level2 %}
-		<a href="/{{site.data.index.documentationFolder}}/{{prop.title}}/{{sublevel.title}}/Introduction"><button class="carousel__card-btn">{{sublevel.title}}</button></a>
+		<a href="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title}}/{{sublevel.title}}/Introduction"><button class="carousel__card-btn">{{sublevel.title}}</button></a>
 		{% endfor %}
 	</div>
 	{% endfor %}
@@ -56,11 +56,11 @@ layout: default
 	{% for prop in site.data.nav %}
 	<div class="carousel__card-bg">
 		<div class="carousel__card-fg">
-			<img src="{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard.png"
-				 srcset="{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@2x.png 2x,
-				 		 {{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@3x.png 3x"
-				 onerror="this.src='/images/fleets/default-placard.png';
-						  this.srcset='/images/fleets/default-placard@2x.png 2x, /images/default-placard@3x.png 3x'"
+			<img src="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard.png"
+				 srcset="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@2x.png 2x,
+				 		 {{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@3x.png 3x"
+				 onerror="this.src='{{site.baseurl}}/images/fleets/default-placard.png';
+						  this.srcset='{{site.baseurl}}/images/fleets/default-placard@2x.png 2x, {{site.baseurl}}/images/default-placard@3x.png 3x'"
 				 class="carousel__gear" />
 		</div>
 		<h3 class="carousel__title">{{prop.title}}</h3>
@@ -77,9 +77,9 @@ layout: default
 <div class="inner-container">
 	{% for feature in site.data.features %}
 	<div class="col-2 feature">
-		<img src="{{feature.imgName}}.png"
-		     srcset="{{feature.imgName}}@2x.png 2x,
-		             {{feature.imgName}}@3x.png 3x"
+		<img src="{{site.baseurl}}/{{feature.imgName}}.png"
+		     srcset="{{site.baseurl}}/{{feature.imgName}}@2x.png 2x,
+		             {{site.baseurl}}/{{feature.imgName}}@3x.png 3x"
 		     class="feature__img" alt="Feature icon">
 		<div class="feature__text">
 			<p class="feature__title">{{feature.title}}</p>
@@ -91,8 +91,8 @@ layout: default
 </div>
 {% endif %}
 
-<script src="{{ "/js/jquery-3.3.1.min.js" | relative_url }}"></script>
-<script src="{{ "/js/slick.js" | relative_url }}"></script>
+<script src="{{ "{{site.baseurl}}/js/jquery-3.3.1.min.js" | relative_url }}"></script>
+<script src="{{ "{{site.baseurl}}/js/slick.js" | relative_url }}"></script>
 <script type="text/javascript">
 
 $('.carousel').slick({
