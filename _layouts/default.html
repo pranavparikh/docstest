@@ -20,9 +20,9 @@
 <body>
 	
 	<header>
-		<a href="/">
-			<img src="{{site.baseurl}}/{{site.data.assets.logo}}.png" class="logo" alt="Main Brand Logo"
-				 srcset="{{site.baseurl}}/{{site.data.assets.logo}}@2x.png 2x, {{site.baseurl}}/{{site.data.assets.logo}}@3x.png 3x">
+		<a href="{{site.baseurl}}/">
+			<img src="{{site.baseurl}}{{site.data.assets.logo}}.png" class="logo" alt="Main Brand Logo"
+				 srcset="{{site.baseurl}}{{site.data.assets.logo}}@2x.png 2x, {{site.baseurl}}{{site.data.assets.logo}}@3x.png 3x">
 		</a>
 		<form action="/search" method="get">
 			<input type="text" id="search-box" name="query" placeholder="Search" class="search-box">
@@ -43,11 +43,11 @@
 								{{site.baseurl}}/images/arrow-down-icon@3x.png 3x">
 				</a>
 				<div class="nav-links__fleets-content">
-					<a href="/">
+					<a href="{{site.baseurl}}/">
 						All Fleets
 					</a>
 					{% for category in site.data.nav %}
-					<a href="/{{category.title}}/">
+					<a href="{{site.baseurl}}/{{category.title}}/">
 						{{category.title}}
 					</a>
 					{% endfor %}
@@ -74,16 +74,16 @@
 
 	<footer>
 		<img class="left-footer-logo" alt="Left Footer Logo"
-			 src="{{site.baseurl}}/{{site.data.assets.leftFooterLogo}}.png"
-			 srcset="{{site.baseurl}}/{{site.data.assets.leftFooterLogo}}@2x.png 2x,
-			 {{site.baseurl}}/{{site.data.assets.leftFooterLogo}}@3x.png 3x">
+			 src="{{site.baseurl}}{{site.data.assets.leftFooterLogo}}.png"
+			 srcset="{{site.baseurl}}{{site.data.assets.leftFooterLogo}}@2x.png 2x,
+			 {{site.baseurl}}{{site.data.assets.leftFooterLogo}}@3x.png 3x">
 		{% if site.data.global.copyright %}
 		<span class="copyright">{{site.data.global.copyright}}</span>
 		{% endif %}
 		<img class="right-footer-logo" alt="Right Footer Logo"
-			 src="{{site.baseurl}}/{{site.data.assets.rightFooterLogo}}.png"
-			 srcset="{{site.baseurl}}/{{site.data.assets.rightFooterLogo}}@2x.png 2x,
-			 {{site.baseurl}}/{{site.data.assets.rightFooterLogo}}@3x.png 3x">
+			 src="{{site.baseurl}}{{site.data.assets.rightFooterLogo}}.png"
+			 srcset="{{site.baseurl}}{{site.data.assets.rightFooterLogo}}@2x.png 2x,
+			 {{site.baseurl}}{{site.data.assets.rightFooterLogo}}@3x.png 3x">
 	</footer>
 
 </body>
