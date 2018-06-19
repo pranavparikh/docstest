@@ -6,24 +6,24 @@ layout: default
   <div class="breadcrumb doc-breadcrumb">
     <p>
       <a class="breadcrumb__link" href="/">Home</a>
-      <img src="/images/arrow-right-icon.png"
-           srcset="/images/arrow-right-icon@2x.png 2x,
-                   /images/arrow-right-icon@3x.png 3x"
+      <img src="{{site.baseurl}}/images/arrow-right-icon.png"
+           srcset="{{site.baseurl}}/images/arrow-right-icon%402x.png 2x,
+           {{site.baseurl}}/images/arrow-right-icon%403x.png 3x"
            class="arrow-right-icon">
-      <a class="breadcrumb__link" href="/{{page.level1}}/">{{ page.level1 }}</a>
-      <img src="/images/arrow-right-icon.png"
-           srcset="/images/arrow-right-icon@2x.png 2x,
-                   /images/arrow-right-icon@3x.png 3x"
+      <a class="breadcrumb__link" href="{{site.baseurl}}/{{page.level1}}/">{{ page.level1 }}</a>
+      <img src="{{site.baseurl}}/images/arrow-right-icon.png"
+           srcset="{{site.baseurl}}/images/arrow-right-icon%402x.png 2x,
+           {{site.baseurl}}/images/arrow-right-icon%403x.png 3x"
            class="arrow-right-icon">
-      <a class="breadcrumb__link" href="/documentation/{{page.level1}}/{{ page.level2 }}/{{ page.level3 }}/Introduction">{{ page.level2 }} {{ page.level3 }}</a>
-      <img src="/images/arrow-right-icon.png"
-           srcset="/images/arrow-right-icon@2x.png 2x,
-                   /images/arrow-right-icon@3x.png 3x"
+      <a class="breadcrumb__link" href="{{site.baseurl}}/documentation/{{page.level1}}/{{ page.level2 }}/{{ page.level3 }}/Introduction">{{ page.level2 }} {{ page.level3 }}</a>
+      <img src="{{site.baseurl}}/images/arrow-right-icon.png"
+           srcset="{{site.baseurl}}/images/arrow-right-icon%402x.png 2x,
+           {{site.baseurl}}/images/arrow-right-icon%403x.png 3x"
            class="arrow-right-icon">
-      <a class="breadcrumb__link" href="/{{page.level1}}/{{ page.level2 }}/{{ page.level3 }}/Training Guide/">Training Guide</a>
-      <img src="/images/arrow-right-icon.png"
-           srcset="/images/arrow-right-icon@2x.png 2x,
-                   /images/arrow-right-icon@3x.png 3x"
+      <a class="breadcrumb__link" href="{{site.baseurl}}/{{page.level1}}/{{ page.level2 }}/{{ page.level3 }}/Training Guide/">Training Guide</a>
+      <img src="{{site.baseurl}}/images/arrow-right-icon.png"
+           srcset="{{site.baseurl}}/images/arrow-right-icon%402x.png 2x,
+           {{site.baseurl}}/images/arrow-right-icon%403x.png 3x"
            class="arrow-right-icon">
       <span class="breadcrumb__current-page">{{ page.course }}</span>
     </p>
@@ -43,4 +43,4 @@ layout: default
     }
   }
 </script>
-<script type="text/javascript" src="/js/prism.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/js/prism.js"></script>

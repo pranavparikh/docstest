@@ -8,8 +8,8 @@ permalink: Mocking/
     <p>
       <a class="breadcrumb__link" href="/">Home</a>
       <img src="/images/arrow-right-icon.png"
-             srcset="/images/arrow-right-icon@2x.png 2x,
-                     /images/arrow-right-icon@3x.png 3x"
+             srcset="/images/arrow-right-icon%402x.png 2x,
+                     /images/arrow-right-icon%403x.png 3x"
              class="arrow-right-icon">
       <span class="breadcrumb__current-page">Mocking</span>
     </p>
@@ -24,10 +24,10 @@ permalink: Mocking/
       {% for level2 in level1.level2 %}
       <div class="col-2 card-bg">
         <div class="card-fg">
-          <img src="/documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard.png"
-               srcset="/documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard@2x.png 2x,
-                       /documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard@3x.png 3x"
-               onerror="this.src='/images/platforms/default-placard.png'; this.srcset='/images/platforms/default-placard@2x.png 2x, /images/platforms/default-placard@3x.png 3x'"
+          <img src="{{site.baseurl}}/documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard.png"
+               srcset="{{site.baseurl}}/documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard%402x.png 2x,
+               {{site.baseurl}}/documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard%403x.png 3x"
+               onerror="this.src='{{site.baseurl}}/images/platforms/default-placard.png'; this.srcset='{{site.baseurl}}/images/platforms/default-placard%402x.png 2x, {{site.baseurl}}/images/platforms/default-placard%403x.png 3x'"
                class="platform-img" />
           <h3 class="title">{{level2.title}}</h3>
           {% if site.data.global.blurbs %}
@@ -35,7 +35,7 @@ permalink: Mocking/
           {% endif %}
         </div>
         {% for level3 in level2.level3 %}
-        <a href="/documentation/Mocking/{{level2.title}}/{{level3.title}}/Introduction">
+        <a href="{{site.baseurl}}/documentation/Mocking/{{level2.title}}/{{level3.title}}/Introduction">
           <button class="card-btn platform-btn">{{level3.title}}</button>
         </a>
         {% endfor %}

@@ -6,14 +6,14 @@ layout: default
   <div class="breadcrumb doc-breadcrumb">
     <p>
       <a class="breadcrumb__link" href="/">Home</a>
-      <img src="/images/arrow-right-icon.png"
-           srcset="/images/arrow-right-icon@2x.png 2x,
-                   /images/arrow-right-icon@3x.png 3x"
+      <img src="{{site.baseurl}}/images/arrow-right-icon.png"
+           srcset="{{site.baseurl}}/images/arrow-right-icon%402x.png 2x,
+           {{site.baseurl}}/images/arrow-right-icon%403x.png 3x"
            class="arrow-right-icon">
-      <a class="breadcrumb__link" href="/{{page.level1}}/">{{ page.level1 }}</a>
-      <img src="/images/arrow-right-icon.png"
-           srcset="/images/arrow-right-icon@2x.png 2x,
-                   /images/arrow-right-icon@3x.png 3x"
+      <a class="breadcrumb__link" href="{{site.baseurl}}/{{page.level1}}/">{{ page.level1 }}</a>
+      <img src="{{site.baseurl}}/images/arrow-right-icon.png"
+           srcset="{{site.baseurl}}/images/arrow-right-icon%402x.png 2x,
+           {{site.baseurl}}/images/arrow-right-icon%403x.png 3x"
            class="arrow-right-icon">
       <span class="breadcrumb__current-page">{{ page.level2 }} {{ page.level3 }}</span>
     </p>
@@ -41,21 +41,21 @@ layout: default
           {% assign mdremoved = level4.title | remove: ".md" %}
           {% if page.title == mdremoved %}
             {% if level4.title == 'Training Guide' %}
-            <li><a href="/{{level4.url}}" class="sidebar__file-links sidebar__file-sublink-current sidebar__file-sublink">
+            <li><a href="{{site.baseurl}}/{{level4.url}}" class="sidebar__file-links sidebar__file-sublink-current sidebar__file-sublink">
               {{ level4.title | remove: ".md" }}
             </a></li>
             {% else %}
-            <li><a href="/documentation/{{level4.url}}" class="sidebar__file-links sidebar__file-sublink-current sidebar__file-sublink">
+            <li><a href="{{site.baseurl}}/documentation/{{level4.url}}" class="sidebar__file-links sidebar__file-sublink-current sidebar__file-sublink">
               {{ level4.title | remove: ".md" }}
             </a></li>
             {% endif %}
           {% else %}
             {% if level4.title == 'Training Guide' %}
-            <li><a href="/{{level4.url}}" class="sidebar__file-links sidebar__file-sublink">
+            <li><a href="{{site.baseurl}}/{{level4.url}}" class="sidebar__file-links sidebar__file-sublink">
               {{ level4.title | remove: ".md" }}
             </a></li>
             {% else %}
-            <li><a href="/documentation/{{level4.url}}" class="sidebar__file-links sidebar__file-sublink">
+            <li><a href="{{site.baseurl}}/documentation/{{level4.url}}" class="sidebar__file-links sidebar__file-sublink">
               {{ level4.title | remove: ".md" }}
             </a></li>
             {% endif %}
@@ -64,21 +64,21 @@ layout: default
           {% assign mdremoved = level4.title | remove: ".md" %}
           {% if page.title == mdremoved %}
             {% if level4.title == 'Training Guide' %}
-            <li><a href="/{{level4.url}}" class="sidebar__file-links sidebar__file-links-current">
+            <li><a href="{{site.baseurl}}/{{level4.url}}" class="sidebar__file-links sidebar__file-links-current">
               {{ level4.title | remove: ".md" }}
             </a></li>
             {% else %}
-            <li><a href="/documentation/{{level4.url}}" class="sidebar__file-links sidebar__file-links-current">
+            <li><a href="{{site.baseurl}}/documentation/{{level4.url}}" class="sidebar__file-links sidebar__file-links-current">
               {{ level4.title | remove: ".md" }}
             </a></li>
             {% endif %}
           {% else %}
             {% if level4.title == 'Training Guide' %}
-            <li><a href="/{{level4.url}}" class="sidebar__file-links">
+            <li><a href="{{site.baseurl}}/{{level4.url}}" class="sidebar__file-links">
               {{ level4.title | remove: ".md" }}
             </a></li>
             {% else %}
-            <li><a href="/documentation/{{level4.url}}" class="sidebar__file-links">
+            <li><a href="{{site.baseurl}}/documentation/{{level4.url}}" class="sidebar__file-links">
               {{ level4.title | remove: ".md" }}
             </a></li>
             {% endif %}
@@ -107,6 +107,6 @@ layout: default
     }
   }
 </script>
-<script type="text/javascript" src="/js/prism.js"></script>
-<script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/doc.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/js/prism.js"></script>
+<script src="{{site.baseurl}}/js/jquery-3.3.1.min.js"></script>
+<script src="{{site.baseurl}}/js/doc.js"></script>
