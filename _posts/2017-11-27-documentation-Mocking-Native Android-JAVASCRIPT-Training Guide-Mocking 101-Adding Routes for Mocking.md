@@ -11,43 +11,43 @@ course: Mocking 101
 <div class="sidebar">
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/checked.png" srcset="/images/training/checked@2x.png 2x, /images/training/checked@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/checked.png" srcset="{{site.baseurl}}/images/training/checked%402x.png 2x, {{site.baseurl}}/images/training/checked%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-completed" href="./Introduction">Introduction</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/checked.png" srcset="/images/training/checked@2x.png 2x, /images/training/checked@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/checked.png" srcset="{{site.baseurl}}/images/training/checked%402x.png 2x, {{site.baseurl}}/images/training/checked%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-completed" href="./Setting and Installing Mock Server">Setting and Installing Mock Server</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/actived.png" srcset="/images/training/actived@2x.png 2x, /images/training/actived@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/actived.png" srcset="{{site.baseurl}}/images/training/actived%402x.png 2x, {{site.baseurl}}/images/training/actived%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-current" href="./Adding Routes for Mocking">Adding Routes for Mocking</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/unread.png" srcset="/images/training/unread@2x.png 2x, /images/training/unread@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/unread.png" srcset="{{site.baseurl}}/images/training/unread%402x.png 2x, {{site.baseurl}}/images/training/unread%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-pending" href="./Introduction to Mocking UI">Introduction to Mocking UI</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/unread.png" srcset="/images/training/unread@2x.png 2x, /images/training/unread@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/unread.png" srcset="{{site.baseurl}}/images/training/unread%402x.png 2x, {{site.baseurl}}/images/training/unread%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-pending" href="./Introduction to Variants">Introduction to Variants</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/unread.png" srcset="/images/training/unread@2x.png 2x, /images/training/unread@3x.png 3x" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/unread.png" srcset="{{site.baseurl}}/images/training/unread%402x.png 2x, {{site.baseurl}}/images/training/unread%403x.png 3x" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-pending" href="./Exercise">Exercise</a></p>
 </div>
 </div>
 <div class="training-doc-nav-btn">
-<a href="./Setting and Installing Mock Server"><img src="/images/training/btn-left.png" srcset="/images/training/btn-left@2x.png 2x, /images/training/btn-left@3x.png 3x" /></a>
+<a href="./Setting and Installing Mock Server"><img src="{{site.baseurl}}/images/training/btn-left.png" srcset="{{site.baseurl}}/images/training/btn-left%402x.png 2x, {{site.baseurl}}/images/training/btn-left%403x.png 3x" /></a>
 </div>
 <div class="training-content markdown">
 <h3>1. What REST APIs can be mocked?</h3>
@@ -94,5 +94,5 @@ course: Mocking 101
 <p><strong>Now start mock server and hit http://localhost:8000/helloUniverse</strong></p>
 </div>
 <div class="training-doc-nav-btn">
-<a href="./Introduction to Mocking UI"><img src="/images/training/btn-right.png" srcset="/images/training/btn-right@2x.png 2x, /images/training/btn-right@3x.png 3x" /></a>
+<a href="./Introduction to Mocking UI"><img src="{{site.baseurl}}/images/training/btn-right.png" srcset="{{site.baseurl}}/images/training/btn-right%402x.png 2x, {{site.baseurl}}/images/training/btn-right%403x.png 3x" /></a>
 </div>

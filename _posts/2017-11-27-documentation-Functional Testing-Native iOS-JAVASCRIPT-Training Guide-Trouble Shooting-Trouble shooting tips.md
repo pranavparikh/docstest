@@ -11,7 +11,7 @@ course: Trouble Shooting
 <div class="sidebar">
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/actived.png" srcset="/images/training/actived@2x.png 2x, /images/training/actived@3x.png 3x" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/actived.png" srcset="{{site.baseurl}}/images/training/actived%402x.png 2x, {{site.baseurl}}/images/training/actived%403x.png 3x" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-current" href="./Trouble shooting tips">Trouble shooting tips</a></p>
 </div>

@@ -11,37 +11,37 @@ course: Mocking 401
 <div class="sidebar">
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/checked.png" srcset="/images/training/checked@2x.png 2x, /images/training/checked@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/checked.png" srcset="{{site.baseurl}}/images/training/checked%402x.png 2x, {{site.baseurl}}/images/training/checked%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-completed" href="./State">State</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/checked.png" srcset="/images/training/checked@2x.png 2x, /images/training/checked@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/checked.png" srcset="{{site.baseurl}}/images/training/checked%402x.png 2x, {{site.baseurl}}/images/training/checked%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-completed" href="./Mocking Utility Methods">Mocking Utility Methods</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/checked.png" srcset="/images/training/checked@2x.png 2x, /images/training/checked@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/checked.png" srcset="{{site.baseurl}}/images/training/checked%402x.png 2x, {{site.baseurl}}/images/training/checked%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-completed" href="./Rest APIs">Rest APIs</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/checked.png" srcset="/images/training/checked@2x.png 2x, /images/training/checked@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/checked.png" srcset="{{site.baseurl}}/images/training/checked%402x.png 2x, {{site.baseurl}}/images/training/checked%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-completed" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-completed" href="./Starting HTTPS server with Mock Server">Starting HTTPS server with Mock Server</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/actived.png" srcset="/images/training/actived@2x.png 2x, /images/training/actived@3x.png 3x" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/actived.png" srcset="{{site.baseurl}}/images/training/actived%402x.png 2x, {{site.baseurl}}/images/training/actived%403x.png 3x" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-current" href="./Exercise">Exercise</a></p>
 </div>
 </div>
 <div class="training-doc-nav-btn">
-<a href="./Starting HTTPS server with Mock Server"><img src="/images/training/btn-left.png" srcset="/images/training/btn-left@2x.png 2x, /images/training/btn-left@3x.png 3x" /></a>
+<a href="./Starting HTTPS server with Mock Server"><img src="{{site.baseurl}}/images/training/btn-left.png" srcset="{{site.baseurl}}/images/training/btn-left%402x.png 2x, {{site.baseurl}}/images/training/btn-left%403x.png 3x" /></a>
 </div>
 <div class="training-content markdown">
 <ol>

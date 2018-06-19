@@ -11,19 +11,19 @@ course: rWeb Testing
 <div class="sidebar">
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/actived.png" srcset="/images/training/actived@2x.png 2x, /images/training/actived@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/actived.png" srcset="{{site.baseurl}}/images/training/actived%402x.png 2x, {{site.baseurl}}/images/training/actived%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-current" href="./Prerequisites">Prerequisites</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/unread.png" srcset="/images/training/unread@2x.png 2x, /images/training/unread@3x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/unread.png" srcset="{{site.baseurl}}/images/training/unread%402x.png 2x, {{site.baseurl}}/images/training/unread%403x.png 3x" /><hr class="training-doc-link-left__hr training-doc-link-left__hr-pending" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-pending" href="./Built-in browser testing">Built-in browser testing</a></p>
 </div>
 <div class="training-doc-link">
 <div class ="training-doc-link-left">
-<img class="training-doc-link-left__img" src="/images/training/unread.png" srcset="/images/training/unread@2x.png 2x, /images/training/unread@3x.png 3x" /></div>
+<img class="training-doc-link-left__img" src="{{site.baseurl}}/images/training/unread.png" srcset="{{site.baseurl}}/images/training/unread%402x.png 2x, {{site.baseurl}}/images/training/unread%403x.png 3x" /></div>
 <p class="training-doc-link__text">
 <a class="training-doc-link__text-pending" href="./Remote browser testing">Remote browser testing</a></p>
 </div>
@@ -72,5 +72,5 @@ course: rWeb Testing
 </code></pre>
 </div>
 <div class="training-doc-nav-btn">
-<a href="./Built-in browser testing"><img src="/images/training/btn-right.png" srcset="/images/training/btn-right@2x.png 2x, /images/training/btn-right@3x.png 3x" /></a>
+<a href="./Built-in browser testing"><img src="{{site.baseurl}}/images/training/btn-right.png" srcset="{{site.baseurl}}/images/training/btn-right%402x.png 2x, {{site.baseurl}}/images/training/btn-right%403x.png 3x" /></a>
 </div>
