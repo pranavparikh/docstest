@@ -39,7 +39,7 @@ level4: Training Guide
 <p class="training-data__topics-text">Run demo tests locally</p>
 </div>
 </div>
-<div class="training-start-btn-wrapper"><a href="/documentation/Functional Testing/rWeb/JAVASCRIPT/Training Guide/Setup/Prerequisites"><button class="training-start-btn">
+<div class="training-start-btn-wrapper"><a href="{{site.baseurl}}/documentation/Functional Testing/rWeb/JAVASCRIPT/Training Guide/Setup/Prerequisites"><button class="training-start-btn">
 <span>Start</span>
 <img src="{{site.baseurl}}/images/training/icon-arrow.png" srcset="{{site.baseurl}}/images/training/icon-arrow%402x.png 2x, {{site.baseurl}}/images/training/icon-arrow%403x.png 3x">
 </button></a></div>
@@ -48,7 +48,7 @@ level4: Training Guide
 <div class="training-placard training-placard__medium">
 <p class="training-time">
 <span class="training-time__value training-time__medium">
-<img src="{{site.baseurl}}/images/training/icon-time.png" srcset="{{site.baseurl}}/images/training/icon-time%402x.png 2x, {{site.baseurl}}/images/training/icon-time%403x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-time.png" srcset="{{site.baseurl}}/images/training/icon-time%402x.png 2x, /images/training/icon-time%403x.png 3x" />
 50 min
 </span>
 </p>
@@ -76,7 +76,7 @@ level4: Training Guide
 <p class="training-data__topics-text">Remote browser testing</p>
 </div>
 </div>
-<div class="training-start-btn-wrapper"><a href="/documentation/Functional Testing/rWeb/JAVASCRIPT/Training Guide/rWeb Testing/Prerequisites"><button class="training-start-btn">
+<div class="training-start-btn-wrapper"><a href="{{site.baseurl}}/documentation/Functional Testing/rWeb/JAVASCRIPT/Training Guide/rWeb Testing/Prerequisites"><button class="training-start-btn">
 <span>Start</span>
 <img src="{{site.baseurl}}/images/training/icon-arrow.png" srcset="{{site.baseurl}}/images/training/icon-arrow%402x.png 2x, {{site.baseurl}}/images/training/icon-arrow%403x.png 3x">
 </button></a></div>
@@ -85,7 +85,7 @@ level4: Training Guide
 <div class="training-placard training-placard__medium">
 <p class="training-time">
 <span class="training-time__value training-time__medium">
-<img src="{{site.baseurl}}/images/training/icon-time.png" srcset="{{site.baseurl}}/images/training/icon-time%402x.png 2x, {{site.baseurl}}/images/training/icon-time%403x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-time.png" srcset="{{site.baseurl}}/images/training/icon-time%402x.png 2x, /images/training/icon-time%403x.png 3x" />
 50 min
 </span>
 </p>
@@ -113,7 +113,7 @@ level4: Training Guide
 <p class="training-data__topics-text">Configure test profiles</p>
 </div>
 </div>
-<div class="training-start-btn-wrapper"><a href="/documentation/Functional Testing/rWeb/JAVASCRIPT/Training Guide/Magellan/Magellan usage"><button class="training-start-btn">
+<div class="training-start-btn-wrapper"><a href="{{site.baseurl}}/documentation/Functional Testing/rWeb/JAVASCRIPT/Training Guide/Magellan/Magellan usage"><button class="training-start-btn">
 <span>Start</span>
 <img src="{{site.baseurl}}/images/training/icon-arrow.png" srcset="{{site.baseurl}}/images/training/icon-arrow%402x.png 2x, {{site.baseurl}}/images/training/icon-arrow%403x.png 3x">
 </button></a></div>
@@ -122,7 +122,7 @@ level4: Training Guide
 <div class="training-placard training-placard__medium">
 <p class="training-time">
 <span class="training-time__value training-time__medium">
-<img src="{{site.baseurl}}/images/training/icon-time.png" srcset="{{site.baseurl}}/images/training/icon-time%402x.png 2x, {{site.baseurl}}/images/training/icon-time%403x.png 3x" />
+<img src="{{site.baseurl}}/images/training/icon-time.png" srcset="{{site.baseurl}}/images/training/icon-time%402x.png 2x, /images/training/icon-time%403x.png 3x" />
 50 min
 </span>
 </p>
@@ -144,7 +144,7 @@ level4: Training Guide
 <p class="training-data__topics-text">Page Object properties</p>
 </div>
 </div>
-<div class="training-start-btn-wrapper"><a href="/documentation/Functional Testing/rWeb/JAVASCRIPT/Training Guide/Tests Framework/About the tests"><button class="training-start-btn">
+<div class="training-start-btn-wrapper"><a href="{{site.baseurl}}/documentation/Functional Testing/rWeb/JAVASCRIPT/Training Guide/Tests Framework/About the tests"><button class="training-start-btn">
 <span>Start</span>
 <img src="{{site.baseurl}}/images/training/icon-arrow.png" srcset="{{site.baseurl}}/images/training/icon-arrow%402x.png 2x, {{site.baseurl}}/images/training/icon-arrow%403x.png 3x">
 </button></a></div>

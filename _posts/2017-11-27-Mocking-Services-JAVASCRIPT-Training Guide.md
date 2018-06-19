@@ -39,7 +39,7 @@ level4: Training Guide
 <p class="training-data__topics-text">Basic usage of mocking solution's functionalities</p>
 </div>
 </div>
-<div class="training-start-btn-wrapper"><a href="/documentation/Mocking/Services/JAVASCRIPT/Training Guide/Mocking 101/Introduction"><button class="training-start-btn">
+<div class="training-start-btn-wrapper"><a href="{{site.baseurl}}/documentation/Mocking/Services/JAVASCRIPT/Training Guide/Mocking 101/Introduction"><button class="training-start-btn">
 <span>Start</span>
 <img src="{{site.baseurl}}/images/training/icon-arrow.png" srcset="{{site.baseurl}}/images/training/icon-arrow%402x.png 2x, {{site.baseurl}}/images/training/icon-arrow%403x.png 3x">
 </button></a></div>
@@ -76,7 +76,7 @@ level4: Training Guide
 <p class="training-data__topics-text">Customize mocked response</p>
 </div>
 </div>
-<div class="training-start-btn-wrapper"><a href="/documentation/Mocking/Services/JAVASCRIPT/Training Guide/Mocking 201/Dynamic URLs"><button class="training-start-btn">
+<div class="training-start-btn-wrapper"><a href="{{site.baseurl}}/documentation/Mocking/Services/JAVASCRIPT/Training Guide/Mocking 201/Dynamic URLs"><button class="training-start-btn">
 <span>Start</span>
 <img src="{{site.baseurl}}/images/training/icon-arrow.png" srcset="{{site.baseurl}}/images/training/icon-arrow%402x.png 2x, {{site.baseurl}}/images/training/icon-arrow%403x.png 3x">
 </button></a></div>
@@ -113,7 +113,7 @@ level4: Training Guide
 <p class="training-data__topics-text">Parallel Sessions</p>
 </div>
 </div>
-<div class="training-start-btn-wrapper"><a href="/documentation/Mocking/Services/JAVASCRIPT/Training Guide/Mocking 301/Different ways of returning response data"><button class="training-start-btn">
+<div class="training-start-btn-wrapper"><a href="{{site.baseurl}}/documentation/Mocking/Services/JAVASCRIPT/Training Guide/Mocking 301/Different ways of returning response data"><button class="training-start-btn">
 <span>Start</span>
 <img src="{{site.baseurl}}/images/training/icon-arrow.png" srcset="{{site.baseurl}}/images/training/icon-arrow%402x.png 2x, {{site.baseurl}}/images/training/icon-arrow%403x.png 3x">
 </button></a></div>
@@ -150,7 +150,7 @@ level4: Training Guide
 <p class="training-data__topics-text">Supported Rest APIs for mock server</p>
 </div>
 </div>
-<div class="training-start-btn-wrapper"><a href="/documentation/Mocking/Services/JAVASCRIPT/Training Guide/Mocking 401/State"><button class="training-start-btn">
+<div class="training-start-btn-wrapper"><a href="{{site.baseurl}}/documentation/Mocking/Services/JAVASCRIPT/Training Guide/Mocking 401/State"><button class="training-start-btn">
 <span>Start</span>
 <img src="{{site.baseurl}}/images/training/icon-arrow.png" srcset="{{site.baseurl}}/images/training/icon-arrow%402x.png 2x, {{site.baseurl}}/images/training/icon-arrow%403x.png 3x">
 </button></a></div>
