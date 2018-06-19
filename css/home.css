@@ -5,12 +5,12 @@
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url('/images/hero-bg.png');
+  background-image: url('../images/hero-bg.png');
   background-image:
     -webkit-image-set(
-      url('/images/hero-bg.png') 1x,
-      url('/images/hero-bg@2x.png') 2x,
-      url('/images/hero-bg@3x.png') 3x
+      url('../images/hero-bg.png') 1x,
+      url('../images/hero-bg%402x.png') 2x,
+      url('../images/hero-bg403x.png') 3x
     );
   background-size: cover;
 }
