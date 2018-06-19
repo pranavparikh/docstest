@@ -1,0 +1,47 @@
+---
+title: Mocking
+layout: default
+permalink: Mocking/
+---
+<div class="inner-container">
+  <div class="breadcrumb">
+    <p>
+      <a class="breadcrumb__link" href="/">Home</a>
+      <img src="/images/arrow-right-icon.png"
+             srcset="/images/arrow-right-icon@2x.png 2x,
+                     /images/arrow-right-icon@3x.png 3x"
+             class="arrow-right-icon">
+      <span class="breadcrumb__current-page">Mocking</span>
+    </p>
+  </div>
+  {% for level1 in site.data.nav %}
+  {% if level1.title == 'Mocking' %}
+      <h2 class="functional-area-title">{{level1.title}}</h2>
+      {% if site.data.global.blurbs %}
+      <p class="functional-area-description">{% include Mocking.ext %}</p>
+      <div class="clear"></div>
+      {% endif %}
+      {% for level2 in level1.level2 %}
+      <div class="col-2 card-bg">
+        <div class="card-fg">
+          <img src="/documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard.png"
+               srcset="/documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard@2x.png 2x,
+                       /documentation/Mocking/{{level2.title | replace: ' ', '%20'}}/images/placard@3x.png 3x"
+               onerror="this.src='/images/platforms/default-placard.png'; this.srcset='/images/platforms/default-placard@2x.png 2x, /images/platforms/default-placard@3x.png 3x'"
+               class="platform-img" />
+          <h3 class="title">{{level2.title}}</h3>
+          {% if site.data.global.blurbs %}
+          <p class="intro platform-intro">{% include Mocking{{level2.title | remove: " "}}.ext %}</p>
+          {% endif %}
+        </div>
+        {% for level3 in level2.level3 %}
+        <a href="/documentation/Mocking/{{level2.title}}/{{level3.title}}/Introduction">
+          <button class="card-btn platform-btn">{{level3.title}}</button>
+        </a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+      <div class="clear"></div>
+  {% endif %}
+  {% endfor %}
+</div>

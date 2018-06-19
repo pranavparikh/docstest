@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Armada</title>
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<link rel="stylesheet" type="text/css" href="/css/doc.css">
+	<link rel="stylesheet" type="text/css" href="/css/training.css">
+	<link rel="stylesheet" type="text/css" href="/css/faq.css">
+	<link rel="stylesheet" type="text/css" href="/css/contact.css">
+	<link rel="stylesheet" type="text/css" href="/css/search.css">
+	<link rel="stylesheet" type="text/css" href="/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="/css/prism.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+</head>
+<body>
+	
+	<header>
+		<a href="/">
+			<img src="{{site.data.assets.logo}}.png" class="logo" alt="Main Brand Logo"
+				 srcset="{{site.data.assets.logo}}@2x.png 2x, {{site.data.assets.logo}}@3x.png 3x">
+		</a>
+		<form action="/search" method="get">
+			<input type="text" id="search-box" name="query" placeholder="Search" class="search-box">
+			<div class="select-box">
+				<select name="fleet" id="fleet-box" onchange="document.getElementById('search-box').focus();">
+					<option value="all">All Fleets</option>
+					{% for category in site.data.nav %}
+					<option value="{{category.title}}">{{category.title}}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</form>
+		<div class="nav-links">
+			<div class="nav-links__fleets">
+				<a class="nav-links__fleets-btn">
+					Fleets <img src="/images/arrow-down-icon.png" class="arrow-down-icon"
+								srcset="/images/arrow-down-icon@2x.png 2x,
+										/images/arrow-down-icon@3x.png 3x">
+				</a>
+				<div class="nav-links__fleets-content">
+					<a href="/">
+						All Fleets
+					</a>
+					{% for category in site.data.nav %}
+					<a href="/{{category.title}}/">
+						{{category.title}}
+					</a>
+					{% endfor %}
+				</div>
+			</div>
+			{% if site.data.global.faqs == true %}
+			<a href="/faq" class="nav-links__main-links">FAQ</a>
+			{% endif %}
+			{% if site.data.global.contact == true %}
+			<a href="/contact" class="nav-links__main-links">Contact</a>
+			{% endif %}
+			{% if site.data.global.githubLink %}
+			<a href="{{site.data.global.githubLink}}" target="_blank" class="nav-links__main-links">GitHub</a>
+			{% endif %}
+		</div>
+	</header>
+
+	<div class="container">
+		{{content}}
+	</div>
+
+	<footer>
+		<img class="left-footer-logo" alt="Left Footer Logo"
+			 src="{{site.data.assets.leftFooterLogo}}.png"
+			 srcset="{{site.data.assets.leftFooterLogo}}@2x.png 2x,
+					 {{site.data.assets.leftFooterLogo}}@3x.png 3x">
+		{% if site.data.global.copyright %}
+		<span class="copyright">{{site.data.global.copyright}}</span>
+		{% endif %}
+		<img class="right-footer-logo" alt="Right Footer Logo"
+			 src="{{site.data.assets.rightFooterLogo}}.png"
+			 srcset="{{site.data.assets.rightFooterLogo}}@2x.png 2x,
+			 		 {{site.data.assets.rightFooterLogo}}@3x.png 3x">
+	</footer>
+
+</body>
+</html>
