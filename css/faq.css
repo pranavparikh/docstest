@@ -52,12 +52,12 @@ select {
   font-size: 15px;
   background: #ffffff;
   color: #555555;
-  background-image: url('/images/arrow-down-icon-grey.png');
+  background-image: url('../images/arrow-down-icon-grey.png');
   background-image:
     -webkit-image-set(
-      url('/images/arrow-down-icon-grey.png') 1x,
-      url('/images/arrow-down-icon-grey@2x.png') 2x,
-      url('/images/arrow-down-icon-grey@3x.png') 3x
+      url('../images/arrow-down-icon-grey.png') 1x,
+      url('../images/arrow-down-icon-grey%402x.png') 2x,
+      url('../images/arrow-down-icon-grey%403x.png') 3x
     );
   background-repeat: no-repeat;
   background-position: 95% 50%;
@@ -84,13 +84,13 @@ select:disabled {
 }
 
 .faq-select-box:hover select {
-  background-image: url('/images/arrow-down-icon-hover.png');
-  background-image: -webkit-image-set( url('/images/arrow-down-icon-hover.png') 1x, url('/images/arrow-down-icon-hover@2x.png') 2x, url('/images/arrow-down-icon-hover@3x.png') 3x);
+  background-image: url('../images/arrow-down-icon-hover.png');
+  background-image: -webkit-image-set( url('../images/arrow-down-icon-hover.png') 1x, url('../images/arrow-down-icon-hover%402x.png') 2x, url('../images/arrow-down-icon-hover%403x.png') 3x);
 }
 
 .faq-select-box:hover select:disabled {
-  background-image: url('/images/arrow-down-icon-grey.png');
-  background-image: -webkit-image-set( url('/images/arrow-down-icon-grey.png') 1x, url('/images/arrow-down-icon-grey@2x.png') 2x, url('/images/arrow-down-icon@3x.png') 3x);
+  background-image: url('../images/arrow-down-icon-grey.png');
+  background-image: -webkit-image-set( url('../images/arrow-down-icon-grey.png') 1x, url('../images/arrow-down-icon-grey%402x.png') 2x, url('../images/arrow-down-icon%403x.png') 3x);
 }
 
 /* Clear button */
@@ -113,12 +113,12 @@ select:disabled {
   font-weight: 700;
   margin: 0;
   line-height: 30px;
-  background-image: url('/images/faqs/plus-icon.png');
+  background-image: url('../images/faqs/plus-icon.png');
   background-image:
     -webkit-image-set(
-      url('/images/faqs/plus-icon.png') 1x,
-      url('/images/faqs/plus-icon@2x.png') 2x,
-      url('/images/faqs/plus-icon@3x.png') 3x
+      url('../images/faqs/plus-icon.png') 1x,
+      url('../images/faqs/plus-icon%402x.png') 2x,
+      url('../images/faqs/plus-icon%403x.png') 3x
     );
   background-size: 30px;
   background-repeat: no-repeat;
@@ -127,12 +127,12 @@ select:disabled {
 
 .accordion-toggle:hover {
   color: #87caea;
-  background-image: url('/images/faqs/plus-icon-hover.png');
+  background-image: url('../images/faqs/plus-icon-hover.png');
   background-image:
     -webkit-image-set(
-      url('/images/faqs/plus-icon-hover.png') 1x,
-      url('/images/faqs/plus-icon-hover@2x.png') 2x,
-      url('/images/faqs/plus-icon-hover@3x.png') 3x
+      url('../images/faqs/plus-icon-hover.png') 1x,
+      url('../images/faqs/plus-icon-hover%402x.png') 2x,
+      url('../images/faqs/plus-icon-hover%403x.png') 3x
     );
 }
 
