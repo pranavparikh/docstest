@@ -7,7 +7,49 @@
     (1024) to 1079px = header, home & intermediate pages, documentation, training, faq
 */
 
+@media screen and (max-width: 1499px) {
+
+  /* Header */
+
+  .search-box {
+    width: 310px;
+  }
+
+  .select-box {
+    width: 190px;
+  }
+
+  .nav-links {
+    margin-right: 30px;
+  }
+
+  .nav-links a {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+}
+
 @media screen and (max-width: 1439px) {
+
+  /* Header */
+
+  .search-box {
+    width: 290px;
+  }
+
+  .select-box {
+    width: 170px;
+  }
+
+  .nav-links {
+    margin-right: 25px;
+  }
+
+  .nav-links a {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 
   /* Documentation */
 
@@ -25,13 +67,21 @@
 
   /* Header */
 
+  .search-box {
+    width: 270px;
+  }
+
+  .select-box {
+    width: 150px;
+  }
+
   .nav-links {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .nav-links a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   /* Documentation */
@@ -79,24 +129,24 @@
   }
 
   .search-box {
-    width: 250px;
+    width: 210px;
   }
 
   .select-box {
-    width: 150px;
+    width: 110px;
   }
 
   .arrow-down-icon {
-    padding-left: 5px;
+    padding-left: 4px;
   }
 
   .nav-links {
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   .nav-links a {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   /* Home and intermediate pages */
@@ -196,15 +246,15 @@
   }
 
   .search-box {
-    width: 220px;
+    width: 185px;
   }
 
   .select-box {
-    width: 135px;
+    width: 110px;
   }
 
   .arrow-down-icon {
-    padding-left: 3px;
+    padding-left: 2px;
   }
 
   .nav-links {
@@ -212,8 +262,8 @@
   }
 
   .nav-links a {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   /* Home and intermediate pages */

@@ -71,6 +71,28 @@
 }
 
 
+/* Announcement */
+
+.announcement {
+  margin: 10px;
+  padding: 10px;
+  background-color: #1e6ca8;
+  text-align: center;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.announcement__text {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.announcement__text a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
 /* Placards */
 
 .carousel__card-bg {

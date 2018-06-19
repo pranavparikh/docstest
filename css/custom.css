@@ -1,0 +1,8 @@
+.custom-page-content {
+  display: block;
+}
+
+.custom-page-content ul li p,
+.custom-page-content ol li p {
+  margin: 10px;
+}
