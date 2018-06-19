@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Armada</title>
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<link rel="stylesheet" type="text/css" href="/css/doc.css">
+	<link rel="stylesheet" type="text/css" href="/css/training.css">
+	<link rel="stylesheet" type="text/css" href="/css/faq.css">
+	<link rel="stylesheet" type="text/css" href="/css/contact.css">
+	<link rel="stylesheet" type="text/css" href="/css/search.css">
+	<link rel="stylesheet" type="text/css" href="/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="/css/prism.css">
+	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+</head>
+<body>
+	
+	<header>
+		<a href="/">
+			<img src="/documentation/images/ta-logo.png" class="logo" alt="Main Brand Logo"
+				 srcset="/documentation/images/ta-logo@2x.png 2x, /documentation/images/ta-logo@3x.png 3x">
+		</a>
+		<form action="/search" method="get">
+			<input type="text" id="search-box" name="query" placeholder="Search" class="search-box">
+			<div class="select-box">
+				<select name="fleet" id="fleet-box" onchange="document.getElementById('search-box').focus();">
+					<option value="all">All Fleets</option>
+					
+					<option value="Performance Testing">Performance Testing</option>
+					
+					<option value="Functional Testing">Functional Testing</option>
+					
+					<option value="Mocking">Mocking</option>
+					
+					<option value="Data Insights">Data Insights</option>
+					
+				</select>
+			</div>
+		</form>
+		<div class="nav-links">
+			<div class="nav-links__fleets">
+				<a class="nav-links__fleets-btn">
+					Fleets <img src="/images/arrow-down-icon.png" class="arrow-down-icon"
+								srcset="/images/arrow-down-icon@2x.png 2x,
+										/images/arrow-down-icon@3x.png 3x">
+				</a>
+				<div class="nav-links__fleets-content">
+					<a href="/">
+						All Fleets
+					</a>
+					
+					<a href="/Performance Testing/">
+						Performance Testing
+					</a>
+					
+					<a href="/Functional Testing/">
+						Functional Testing
+					</a>
+					
+					<a href="/Mocking/">
+						Mocking
+					</a>
+					
+					<a href="/Data Insights/">
+						Data Insights
+					</a>
+					
+				</div>
+			</div>
+			
+			
+			
+			<a href="https://github.com/pranavparikh/docstest" target="_blank" class="nav-links__main-links">GitHub</a>
+			
+		</div>
+	</header>
+
+	<div class="container">
+		<h2 id="functional-testing-im-having-npm-install-failure-what-should-i-do">Functional Testing: I’m having npm install failure, what should I do?</h2>
+
+<p>Please make sure that you’re using compatible node and npm. Check versions by node -v and npm -v</p>
+
+<h2 id="functional-testing-which-magellan-command-should-i-use-to-launch-my-test">Functional Testing: Which magellan command should I use to launch my test?</h2>
+
+<p>Please read magellan help by ./node_modules/.bin/magellan –help first. If you cannot find what you want there, or if you’re still not sure, please reach out to us</p>
+
+<h2 id="functional-testing-why-my-test-passes-in-one-browser-but-fails-in-another-one">Functional Testing: Why my test passes in one browser but fails in another one?</h2>
+
+<p>There are couple of things can impact the test results. Page rendering speed, css selector compatibility, viewport size or even the way element’s being rendered. However in most cases the descrepancy is because we’re not really simulating user behaviors in the test. For instance, please make sure your code is not clicking on an element that is not in the viewport.</p>
+
+<h2 id="mocking-how-to-read-dynamic-urls-in-request">Mocking: How To Read Dynamic URLs In Request?</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">shifu</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'shifu'</span><span class="p">);</span>
+<span class="nx">shifu</span><span class="p">.</span><span class="nx">route</span><span class="p">({</span>
+  <span class="na">path</span><span class="p">:</span> <span class="s1">'/get/customerInfo/{customerid}/{zipcode}'</span>
+  <span class="na">handler</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">reply</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="kd">var</span> <span class="nx">params</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">params</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">customerid</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">customerid</span><span class="p">;</span> <span class="c1">// customerid is 123 if request is "/get/customerInfo/123/92127"</span>
+    <span class="kd">var</span> <span class="nx">zipcode</span> <span class="o">=</span> <span class="nx">params</span><span class="p">.</span><span class="nx">zipcode</span><span class="p">;</span>       <span class="c1">// zipcode is 92127 if request is "/get/customerInfo/123/92127"</span>
+  <span class="p">}</span>
+<span class="p">});</span> 
+</code></pre></div></div>
+
+<h2 id="mocking-how-to-read-query-parameters-in-request">Mocking: How To Read Query Parameters In Request?</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">shifu</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'shifu'</span><span class="p">);</span>
+<span class="nx">shifu</span><span class="p">.</span><span class="nx">route</span><span class="p">({</span>
+  <span class="na">path</span><span class="p">:</span> <span class="s1">'/api/getCart'</span>
+  <span class="na">handler</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">reply</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">queryParams</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">query</span><span class="p">;</span>
+    <span class="c1">// foo would be "bar" if incoming request is "/api/getCart?foo=bar"</span>
+    <span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="nx">queryParams</span><span class="p">.</span><span class="nx">foo</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">});</span> 
+</code></pre></div></div>
+
+<h2 id="mocking-how-to-set-cors-headers">Mocking: How To Set CORS Headers?</h2>
+
+<p>The <a href="https://www.w3.org/TR/cors/">Cross-Origin Resource Sharing</a> protocol allows browsers to make cross-origin API calls. CORS is required by web application running inside a browser which are loaded from a different domain than the API server. CORS headers are disabled by default. To enable, set <code class="highlighter-rouge">cors</code> to true, or to an object with the following options:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th style="text-align: center">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>origin</td>
+      <td style="text-align: center">a string array of allowed origin servers <code class="highlighter-rouge">Access-Control-Allow-Origin</code>. Defaults to any origin [‘*’]</td>
+    </tr>
+    <tr>
+      <td>maxAge</td>
+      <td style="text-align: center">number of seconds the browser should cache the CORS response (‘Access-Control-Max-Age’). The greater the value, the longer it will take before the browser checks for changes in policy. Defaults to 86400 (one day).</td>
+    </tr>
+    <tr>
+      <td>headers</td>
+      <td style="text-align: center">string array of allowed headers <code class="highlighter-rouge">Access-Control-Allow-Headers</code>. Defaults to <code class="highlighter-rouge">['Authorization', 'Content-Type', 'If-None-Match']</code>.</td>
+    </tr>
+    <tr>
+      <td>additionalHeaders</td>
+      <td style="text-align: center">string array of additional headers to headers. Use this to keep the default headers in place.</td>
+    </tr>
+    <tr>
+      <td>methods</td>
+      <td style="text-align: center">string array of allowed HTTP methods Access-Control-Allow-Methods. Defaults to <code class="highlighter-rouge">['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'OPTIONS']</code></td>
+    </tr>
+    <tr>
+      <td>additionalMethods</td>
+      <td style="text-align: center">string array of additional methods to methods. Use this to keep the default methods in place</td>
+    </tr>
+    <tr>
+      <td>exposedHeaders</td>
+      <td style="text-align: center">string array of exposed headers Access-Control-Expose-Headers. Defaults to <code class="highlighter-rouge">['WWW-Authenticate', 'Server-Authorization'</code></td>
+    </tr>
+    <tr>
+      <td>additionalExposedHeaders</td>
+      <td style="text-align: center">a string array of additional headers to exposedHeaders. Use this to keep the default headers in place.</td>
+    </tr>
+    <tr>
+      <td>credentials</td>
+      <td style="text-align: center">if true, allows user credentials to be sent Access-Control-Allow-Credentials. Defaults to false.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">corsHeaders</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">origin</span><span class="p">:</span> <span class="p">[</span><span class="s1">'*'</span><span class="p">],</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Access-Control-Allow-Headers"</span><span class="p">,</span> <span class="s2">"Origin, X-Requested-With, Content-Type, Accept"</span><span class="p">],</span>
+  <span class="na">credentials</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1">// Items</span>
+<span class="nx">shifu</span><span class="p">.</span><span class="nx">route</span><span class="p">({</span>
+  <span class="na">id</span><span class="p">:</span> <span class="s1">'tempo'</span><span class="p">,</span>
+  <span class="na">label</span><span class="p">:</span> <span class="s1">'Tempo'</span><span class="p">,</span>
+  <span class="na">path</span><span class="p">:</span> <span class="s1">'/tempo1'</span><span class="p">,</span>
+    
+  <span class="na">config</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">cors</span><span class="p">:</span> <span class="nx">corsHeaders</span>
+  <span class="p">},</span>
+  <span class="na">handler</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">reply</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">shifu</span><span class="p">.</span><span class="nx">util</span><span class="p">.</span><span class="nx">respondWithFile</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">reply</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+	</div>
+
+	<footer>
+		<img class="left-footer-logo" alt="Left Footer Logo"
+			 src="/documentation/images/dxt-logo.png"
+			 srcset="/documentation/images/dxt-logo@2x.png 2x,
+					 /documentation/images/dxt-logo@3x.png 3x">
+		
+		<span class="copyright">&copy; None</span>
+		
+		<img class="right-footer-logo" alt="Right Footer Logo"
+			 src="/documentation/images/walmartlabs-logo.png"
+			 srcset="/documentation/images/walmartlabs-logo@2x.png 2x,
+			 		 /documentation/images/walmartlabs-logo@3x.png 3x">
+	</footer>
+
+</body>
+</html>

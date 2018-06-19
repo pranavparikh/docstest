@@ -224,7 +224,7 @@
   <li>
     <p>Add Mock Server module dependency in <code class="highlighter-rouge">package.json</code> as shown below.</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> "name": "&lt;name-for-your-project&gt;",
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> "name": "&lt;name-for-your-project&gt;",
  "dependencies": {
    "shifu": "^1.0.0",
    "shifu-magellan-nightwatch": "^1.0.0" // needed only for magellan/nightwatch
@@ -232,14 +232,13 @@
  "scripts": {
      "start-mock": "node mocks/run-mock-server-console.js"
  }
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>Create another directory <code class="highlighter-rouge">mocks</code> under the <code class="highlighter-rouge">mock-server</code> directory.</li>
   <li>
     <p>Under the directory <code class="highlighter-rouge">mocks</code>, create a file <code class="highlighter-rouge">endpoints.js</code> with the following code - <em>This file will contain the routes that you want to mock</em></p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>     var shifu = require('shifu'); // Required
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     var shifu = require('shifu'); // Required
      shifu.id('example'); // Required
 
      // add a route that returns a message "hello world"
@@ -253,13 +252,12 @@
            reply({message: 'hello world'});
          }
      });
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Under the directory <code class="highlighter-rouge">mocks</code>, create a file <code class="highlighter-rouge">run-mock-server-console.js</code>with the following code - <em>This file will contain the start-up script for mock server</em></p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>     // load mocked endpoint
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     // load mocked endpoint
      require('./endpoints'); 
      var shifu = require('shifu');
 
@@ -269,15 +267,13 @@
        port: 8080,
        project: 'HelloShifu', //Replace HelloShifu with your project name (without dashes).
      });
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li>
     <p>Now open terminal/cmd prompt and navigate to the directory <code class="highlighter-rouge">mock-server</code> and run the following command to install Mock Server and dependencies:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> npm install
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> npm install
+</code></pre></div>    </div>
     <p><br /></p>
   </li>
 </ol>
@@ -287,9 +283,8 @@
   <li>
     <p>To start mock-server use the following command and than go to <code class="highlighter-rouge">http://localhost:8080/shifu</code> for mock-server admin-ui.</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> npm run start-mock
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> npm run start-mock
+</code></pre></div>    </div>
   </li>
 </ol>
 
@@ -301,15 +296,14 @@
     <p><strong><em>Starting mock server on HTTPS port -</em></strong> 
  To enable <code class="highlighter-rouge">https</code>, add <code class="highlighter-rouge">httpsPort</code> with the desired port number in server start script as shown below:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>  shifu.start({
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  shifu.start({
     port: 8080,
     httpsPort: 4444,
     host: 'localhost',
     mockedDirectory: './test/resources/mocked-data',
     project: 'HelloShifu'
   });
-</code></pre>
-    </div>
+</code></pre></div>    </div>
   </li>
   <li><strong><em>Mocking different REST methods -</em></strong>
  To mock different rest methods, change the <code class="highlighter-rouge">method</code> value in the <code class="highlighter-rouge">shifu.route()</code> object to any one of the following desired values:
@@ -326,7 +320,7 @@
     <p><strong><em>Returning different data set for the same mocked route (Variants) -</em></strong>
  Variants allows to return a different set of data for the same mocked route. To add one or more variants, attach the variant object to <code class="highlighter-rouge">shifu.route()</code> as shown below:</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> shifu.route({
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> shifu.route({
    id: 'message',
    label: 'Hello message',
    path: '/message',
@@ -352,8 +346,7 @@
       reply({message:'Hello Galaxy'})
     }
   });
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>To get a different set of response, go to admin-ui and select a different variant for the above route and hit <code class="highlighter-rouge">http://localhost:8080/message</code> on your favorite browser.</p>
   </li>
@@ -361,7 +354,7 @@
     <p><strong><em>Storing mocked response in a file -</em></strong>
  This feature allows you to respond with a static data stored in a file instead of hard coding the response data in the routes definition.</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> // Automatic reply of the file
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> // Automatic reply of the file
  shifu.route({
    id: 'Get Collection',
    label: 'Get Collections',
@@ -380,20 +373,17 @@
       shifu.util.respondWithFile(this, reply);
     }
   });
-</code></pre>
-    </div>
+</code></pre></div>    </div>
 
     <p>In the above setup, file needed for default route handler (<code class="highlighter-rouge">test-1</code>) should be located at (file location/name is based on <code class="highlighter-rouge">mockedDirectory/route/method/[default|variant_name].{ext}</code>)</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> ./mocks/product/grouping/api/collection/GET/default.{ext}
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ./mocks/product/grouping/api/collection/GET/default.{ext}
+</code></pre></div>    </div>
 
     <p>If this would be a POST call than the file should have been at</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code> ./mocks/product/grouping/api/collection/POST/default.{ext}
-</code></pre>
-    </div>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ./mocks/product/grouping/api/collection/POST/default.{ext}
+</code></pre></div>    </div>
 
     <p>The file name for variants should change from <code class="highlighter-rouge">default.{ext}</code> to universe.{ext} in above example that is the file name should be the variant name.</p>
   </li>

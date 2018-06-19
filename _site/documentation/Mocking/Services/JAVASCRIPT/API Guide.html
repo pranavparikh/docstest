@@ -254,9 +254,8 @@
 
 <p>This API allows to start the mock server.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.start(options, callback);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.start(options, callback);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -333,7 +332,7 @@
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.start({
   host: 'localhost',
   port: 12000,
@@ -342,8 +341,7 @@ shifu.start({
   sessions: 3,
   project: 'My Project'
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -353,9 +351,8 @@ shifu.start({
 
 <p>This API allows to stop the mock server.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.stop(server, callback);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.stop(server, callback);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -383,7 +380,7 @@ shifu.start({
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 var server = shifu.start(options, callback);
 
 // do something with mock server
@@ -395,8 +392,7 @@ shifu.stop(server, function (error) {
       console.log('Mock Server stopped');
   }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -406,9 +402,8 @@ shifu.stop(server, function (error) {
 
 <p>This API allows to create/add required mocked REST endpoints.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.route(options);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.route(options);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -470,7 +465,7 @@ shifu.stop(server, function (error) {
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.route({
   id: 'my_route',
   label: 'My Route',
@@ -481,8 +476,7 @@ shifu.route({
     reply('Hello');
   }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -492,9 +486,8 @@ shifu.route({
 
 <p>This API allows to create/add variants. Variants are route handlers that you can select manually (via Shifu Admin panel) or Rest call or through Node API to select a different dataset for the response for a given route. Variants are defined using the <code class="highlighter-rouge">variant()</code> method on the Route object (returned by calling the route method).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.route(routeOptions).variant(options)
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.route(routeOptions).variant(options)
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -546,7 +539,7 @@ shifu.route({
 
 <p><strong>Example</strong></p>
 
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">shifu</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'shifu'</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">shifu</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'shifu'</span><span class="p">);</span>
 <span class="nx">shifu</span><span class="p">.</span><span class="nx">route</span><span class="p">({</span>
   <span class="na">id</span><span class="p">:</span> <span class="s1">'my_route'</span><span class="p">,</span>
   <span class="na">path</span><span class="p">:</span> <span class="s1">'/api/foo'</span><span class="p">,</span>
@@ -567,8 +560,7 @@ shifu.route({
     <span class="nx">reply</span><span class="p">({</span><span class="na">firstName</span><span class="p">:</span> <span class="s1">'Billy'</span><span class="p">});</span>
   <span class="p">}</span>
 <span class="p">});</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -577,13 +569,12 @@ shifu.route({
 <h3 id="set-variant---setmockvariant">Set variant - setMockVariant()</h3>
 <p><code class="highlighter-rouge">setMockVariant</code> can be used to set a variant to an existing API path.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.setMockVariant(options, callback) // with Shifu library
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.setMockVariant(options, callback) // with Shifu library
 
 or 
 
 browser.setMockVariant(options, callback) // when using Magellan
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -647,7 +638,7 @@ browser.setMockVariant(options, callback) // when using Magellan
 
 <p>If the routes are defined like</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.route({
   id: 'hello',
   path: '/helloWorld',
@@ -661,11 +652,10 @@ shifu.route({
     reply('Hello Universe');
   }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>For the route and variant defined as above, you can set the variant to <code class="highlighter-rouge">universe</code> as follows:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>// when using Shifu library
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// when using Shifu library
 shifu.setMockVariant({
     fixture: 'hello', // same as id in the .route() options
     variant: 'universe' // same as id in the .variant() options
@@ -687,8 +677,7 @@ or
 Alternately, you can also use `curl` call to set a variant with this POST call to `{host}:{port}/shifu/api/route/{routeId}`
 
 curl -H "Content-Type: application/json" -X POST -d '{"variant":"{universe}"}' http://localhost:8080/shifu/api/route/hello?returnConfig=true
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You can confirm if this works by going to Admin panel and see that for <code class="highlighter-rouge">helloWorld</code> route, the variant <code class="highlighter-rouge">universe</code> will be highlighted. Also, hitting this url <code class="highlighter-rouge">http://localhost:8080/helloWorld</code> will reply with <code class="highlighter-rouge">Hello Universe</code>.</p>
 
@@ -702,16 +691,15 @@ curl -H "Content-Type: application/json" -X POST -d '{"variant":"{universe}"}' h
 
 <p>You can also add global variants that will affect all routes. The attributes to the <code class="highlighter-rouge">options</code> are same as that of <code class="highlighter-rouge">variant()</code>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.route(routeOptions).addGlobalVariant(options)
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.route(routeOptions).addGlobalVariant(options)
+</code></pre></div></div>
 
 <p>where</p>
 
 <p><strong>options</strong> - JSON object with the same attributes as of variant <a href="#set-variant---setmockvariant">described in this section</a></p>
 
 <p><strong>Example</strong></p>
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 
 shifu.addGlobalVariant({
   id: '500',
@@ -723,8 +711,7 @@ shifu.addGlobalVariant({
     }).code(500);
   }
 })
-</code></pre>
-</div>
+</code></pre></div></div>
 <hr />
 
 <p><br /></p>
@@ -733,9 +720,8 @@ shifu.addGlobalVariant({
 
 <p>This API allows to respond with static data stored in a file instead of hard coding the response data in the routes definition. Based on the path of the URL that is being mocked, the response file can be dropped in the directory location and the file will be automatically used by Shifu for sending the response. It also allows to specify the absolute path of the response files.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.respondWithFile(route, reply, options);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.respondWithFile(route, reply, options);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -796,7 +782,7 @@ shifu.addGlobalVariant({
 <p>To use this feature, you can call <code class="highlighter-rouge">respondWithFile()</code> from inside route configuration as follows:</p>
 
 <p><strong>Example</strong></p>
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 
 // Automatic reply of the file
 shifu.route({
@@ -817,8 +803,7 @@ shifu.route({
     shifu.util.respondWithFile(this, reply, {code: 204, filePath: '../mocked-data/fileName.json', delay: 1000});
   }
 })
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">respondWithFile</code></em></strong></p>
 
@@ -830,9 +815,8 @@ shifu.route({
 
 <p>This API allows to respond with a variant on the main route handler. The ‘variant’ passed in MUST be the variant on existing route.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.respondWithMockVariant(route, variant, req, reply)
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.respondWithMockVariant(route, variant, req, reply)
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -869,7 +853,7 @@ shifu.route({
 </table>
 
 <p><strong>Example</strong></p>
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.route({
     id: 'respondWithVariant',
     label: 'Respond With Variant',
@@ -887,8 +871,7 @@ shifu.route({
         });
     }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">respondWithMockVariant</code></em></strong></p>
 
@@ -900,13 +883,12 @@ shifu.route({
 
 <p>This API allows to set mock id for a given test case. If this is set, it overrides all the variants and mocked URLs responses to return mocked data from the given directory as <code class="highlighter-rouge">mock-id</code>, where <code class="highlighter-rouge">mock-id</code> is the directory name.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.setMockId(mockId, shifuSessionId) // with Shifu library
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.setMockId(mockId, shifuSessionId) // with Shifu library
 
 or 
 
 browser.setMockId(mocKId, shifuSessionId, callback); // when using Magellan
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -939,7 +921,7 @@ browser.setMockId(mocKId, shifuSessionId, callback); // when using Magellan
 
 <p>The file name should be in the format <code class="highlighter-rouge">url-methodName-urlCount.extension</code> for the responses stored under file. For example, for the given route below</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 
 shifu.route({
   id: 'my_route',
@@ -951,14 +933,13 @@ shifu.route({
     shifu.util.respondWithFile(this, reply);
   }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>the file name should be <code class="highlighter-rouge">api-foo-GET-1.json</code> for the first time the URL is hit. For second time the URL is hit, the file name returned would be <code class="highlighter-rouge">api-foo-GET-2.json</code>. If the specific file for the count is not present, Shifu will look for default file <code class="highlighter-rouge">api-foo-GET.json</code>, which is also helpful if you want to always return the same response irrespective of the number of times the URL is hit.</p>
 
 <p><strong>Example</strong>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.setMockId('cart', 'abcdef'); // All responses should be under "cart" directory under your mocked data directory
 
 or 
@@ -969,8 +950,7 @@ or
 
 curl http://localhost:8000/shifu/api/setMockId/cart/abcdef
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">TIP!</code> For a dynamic url such as <code class="highlighter-rouge">/app/{cartid}/getStatus</code> the default file name should be <code class="highlighter-rouge">app-cartid-getStatus-GET.json</code> and the count specific file name should be like <code class="highlighter-rouge">app-cartid-getStatus-GET-1.json</code>.</p>
 
@@ -982,9 +962,8 @@ curl http://localhost:8000/shifu/api/setMockId/cart/abcdef
 
 <p>This API is used to retrieve the currently set mock id.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.getMockId(shifuSessionId);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.getMockId(shifuSessionId);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1007,15 +986,14 @@ curl http://localhost:8000/shifu/api/setMockId/cart/abcdef
 
 <p><strong>Example</strong>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 var mockId = shifu.getMockId('abcdef');
 
 or 
 
 curl http://localhost:8000/shifu/api/getMockId/cart/abcdef
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note that <code class="highlighter-rouge">abcdef</code> is the session id in use for the current test (optional, if not using parallel sessions)</p>
 
@@ -1027,13 +1005,12 @@ curl http://localhost:8000/shifu/api/getMockId/cart/abcdef
 
 <p>This API is used to reset currently set mock id.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.resetMockId(shifuSessionId) // with Shifu library
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.resetMockId(shifuSessionId) // with Shifu library
 
 or 
 
 browser.resetMockId(shifuSessionId, callback); // when using Magellan
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1061,7 +1038,7 @@ browser.resetMockId(shifuSessionId, callback); // when using Magellan
 
 <p><strong>Example</strong>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.resetMockId('abcdef');
 
 or 
@@ -1072,8 +1049,7 @@ or
 
 curl http://localhost:8000/shifu/api/resetMockId/cart/abcdef
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note that <code class="highlighter-rouge">abcdef</code> is the session id in use for the current test (optional, if not using parallel sessions)</p>
 
@@ -1085,13 +1061,12 @@ curl http://localhost:8000/shifu/api/resetMockId/cart/abcdef
 
 <p>This API is used to reset URL count to zero. This works in conjunction with <code class="highlighter-rouge">setMockId</code> function where you want to restart over for the URL count.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.resetURLCount(shifuSessionId)
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.resetURLCount(shifuSessionId)
 
 or 
 
 browser.resetURLCount(shifuSessionId, callback)
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1119,7 +1094,7 @@ browser.resetURLCount(shifuSessionId, callback)
 
 <p><strong>Example</strong>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.resetURLCount('abcdef');
 
 or 
@@ -1129,8 +1104,7 @@ browser.resetCount('abcdef', callback); // 'abcdef' is a shifu session id in use
 or
 
 curl http://localhost:8000/shifu/api/resetURLCount/abcdef
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note that <code class="highlighter-rouge">abcdef</code> is the session id in use for the current test (optional, if not using parallel sessions)</p>
 
@@ -1142,9 +1116,8 @@ curl http://localhost:8000/shifu/api/resetURLCount/abcdef
 
 <p>This API is used in conjunction with <code class="highlighter-rouge">setMockId</code> function where you want to get the URL count for all mocked calls.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.getURLCount(shifuSessionId)
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.getURLCount(shifuSessionId)
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1167,15 +1140,14 @@ curl http://localhost:8000/shifu/api/resetURLCount/abcdef
 
 <p><strong>Example</strong>:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.getURLCount('abcdef');
 
 or 
 
 curl http://localhost:8000/shifu/api/getURLCount/abcdef
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note that <code class="highlighter-rouge">abcdef</code> is the session id in use for the current test (optional, if not using parallel sessions)</p>
 
@@ -1187,13 +1159,12 @@ curl http://localhost:8000/shifu/api/getURLCount/abcdef
 
 <p>This API is used to register a session with Shifu for a test case when using parallel sessions. Shifu needs to be started with <code class="highlighter-rouge">sessions</code>.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.registerSession(); // with Shifu library
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.registerSession(); // with Shifu library
 
 or 
 
 browser.registerSession(callback); // with browser tests
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1222,7 +1193,7 @@ browser.registerSession(callback); // with browser tests
 
 <p>If <code class="highlighter-rouge">shifu</code> server is started with sessions, for e.g 3 sessions as shown below,</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu');
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu');
 shifu.start({
     host: 'localhost',
     port: 8080,
@@ -1246,8 +1217,7 @@ or
 or
 
 curl http://localhost:8000/shifu/api/registerSession
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -1257,13 +1227,12 @@ curl http://localhost:8000/shifu/api/registerSession
 
 <p>This API is used to close a session after running a test so it can be made available for subsequent tests.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.closeSession(shifuSessionId);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.closeSession(shifuSessionId);
 
 or 
 
 browser.closeSession(shifuSessionId, callback);
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1291,7 +1260,7 @@ browser.closeSession(shifuSessionId, callback);
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 shifu.closeSession('abcdef'); // abcdef is a previously registered session with Shifu
 
 or 
@@ -1305,8 +1274,7 @@ client.closeSession('abcdef', function (err) {
 or
 
 curl http://localhost:8000/shifu/api/closeSession/abcdef
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Note that <code class="highlighter-rouge">abcdef</code> is a previously registered session with Shifu.</p>
 
@@ -1345,14 +1313,13 @@ curl http://localhost:8000/shifu/api/closeSession/abcdef
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 var status = shifu.checkSession('abcdef');
 
 or 
 
 curl http://localhost:8000/shifu/api/checkSession/abcdef
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -1362,20 +1329,18 @@ curl http://localhost:8000/shifu/api/checkSession/abcdef
 
 <p>This API is used to get sessions information</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.getSessions();
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.getSessions();
+</code></pre></div></div>
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 var status = shifu.getSessions();
 
 or 
 
 curl http://localhost:8000/shifu/api/getSessions
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -1385,16 +1350,14 @@ curl http://localhost:8000/shifu/api/getSessions
 
 <p>This API is used to clear the sessions information.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.clearSessions();
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.clearSessions();
+</code></pre></div></div>
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 var status = shifu.clearSessions();
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -1404,16 +1367,14 @@ var status = shifu.clearSessions();
 
 <p>This API is used to get the project name passed in Shifu options</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.getProjectName();
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.getProjectName();
+</code></pre></div></div>
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 var projectName = shifu.getProjectName();
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -1423,16 +1384,14 @@ var projectName = shifu.getProjectName();
 
 <p>This API is used to get the port information passed in Shifu options</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.getPortInfo();
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.getPortInfo();
+</code></pre></div></div>
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 var portInfo = shifu.getPortInfo();
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -1442,9 +1401,8 @@ var portInfo = shifu.getPortInfo();
 
 <p>This API is used to add a value to the server state.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.addState(route, key, value);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.addState(route, key, value);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1477,7 +1435,7 @@ var portInfo = shifu.getPortInfo();
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.route({
   id: 'setState',
@@ -1488,8 +1446,7 @@ shifu.route({
     reply().code(204);
   }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 <p><br /></p>
@@ -1498,9 +1455,8 @@ shifu.route({
 
 <p>This API is used to read a value from the server state.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.getState(route, key);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.getState(route, key);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1528,7 +1484,7 @@ shifu.route({
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.route({
   id: 'getState',
@@ -1539,8 +1495,7 @@ shifu.route({
     reply(isLoggedIn);
   }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 <p><br /></p>
@@ -1549,9 +1504,8 @@ shifu.route({
 
 <p>This API is used to clear a state for a given session id (Defaults to <code class="highlighter-rouge">default</code> session).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.clearState(shifuSessionId);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.clearState(shifuSessionId);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1574,13 +1528,12 @@ shifu.route({
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.clearState(); // Clears state for default session
 
 shifu.clearState('abcdef') // Clears state for session id `abcdef`
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 <p><br /></p>
@@ -1589,9 +1542,8 @@ shifu.clearState('abcdef') // Clears state for session id `abcdef`
 
 <p>This API is used to enable gathering of usage metrics.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.enableMetrics(boolean);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.enableMetrics(boolean);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1614,13 +1566,12 @@ shifu.clearState('abcdef') // Clears state for session id `abcdef`
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.enableMetrics(true); // Enables gathering of usage metrics
 
 shifu.enableMetrics(false); // Disables gathering of usage metrics
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -1630,17 +1581,15 @@ shifu.enableMetrics(false); // Disables gathering of usage metrics
 
 <p>This API is used to check if metrics gathering is enabled on Shifu. Returns true if metrics gathering is enabled, false otherwise</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.isMetricsEnabled();
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.isMetricsEnabled();
+</code></pre></div></div>
 
 <p><strong>Example</strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.isMetricsEnabled();
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -1650,9 +1599,8 @@ shifu.isMetricsEnabled();
 
 <p>This API allows to dynamically transpose the JSON data</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.transposeData(dataSet, dataToChange);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.transposeData(dataSet, dataToChange);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1680,7 +1628,7 @@ shifu.isMetricsEnabled();
 
 <p>To change the JSON data on fly (edit existing values or add values).</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>// Base JSON file
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Base JSON file
 {
   "items":
   {
@@ -1751,8 +1699,7 @@ shifu.util.respondWithFile(this, reply, {transpose: dataToChange});
   }
 }
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">transposeData</code></em></strong></p>
 
@@ -1764,9 +1711,8 @@ shifu.util.respondWithFile(this, reply, {transpose: dataToChange});
 
 <p>This API allows to Kill a process with a pid</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.killProcess(pid, signal, callback);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.killProcess(pid, signal, callback);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1799,13 +1745,12 @@ shifu.util.respondWithFile(this, reply, {transpose: dataToChange});
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.util.killProcess(18222, 'SIGKILL', function () {
   console.log('Process killed);
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">killProcess</code></em></strong></p>
 
@@ -1817,9 +1762,8 @@ shifu.util.killProcess(18222, 'SIGKILL', function () {
 
 <p>This API allows to read contents of a file asynchronously</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.readFile(filePath, callback);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.readFile(filePath, callback);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1847,7 +1791,7 @@ shifu.util.killProcess(18222, 'SIGKILL', function () {
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.util.readFile('data.json', function (err, fileData) {
   if (err) {
@@ -1856,8 +1800,7 @@ shifu.util.readFile('data.json', function (err, fileData) {
     console.log(fileData);
   }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">readFile</code></em></strong></p>
 
@@ -1869,9 +1812,8 @@ shifu.util.readFile('data.json', function (err, fileData) {
 
 <p>This API allows to read contents of a file synchronously</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.readFileSynchronously(filePath);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.readFileSynchronously(filePath);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1894,11 +1836,10 @@ shifu.util.readFile('data.json', function (err, fileData) {
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.util.readFileSynchronously('data.json');
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">readFileSynchronously</code></em></strong></p>
 
@@ -1910,9 +1851,8 @@ shifu.util.readFileSynchronously('data.json');
 
 <p>This API allows to read contents of a JSON file synchronously</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.readJsonFile(filePath);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.readJsonFile(filePath);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1935,11 +1875,10 @@ shifu.util.readFileSynchronously('data.json');
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.util.readJsonFile('data.json');
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">readJsonFile</code></em></strong></p>
 
@@ -1951,9 +1890,8 @@ shifu.util.readJsonFile('data.json');
 
 <p>This API allows to write file contents to a file</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.writeFile(filePath, file data, callback);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.writeFile(filePath, file data, callback);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -1986,13 +1924,12 @@ shifu.util.readJsonFile('data.json');
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.util.writeFile('hello.txt', 'hello world blah blah', function () {
   console.log('Wrote to file successfully');
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">writeFile</code></em></strong></p>
 
@@ -2004,9 +1941,8 @@ shifu.util.writeFile('hello.txt', 'hello world blah blah', function () {
 
 <p>This API allows to write file contents to a file</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.deleteFile(filePath, callback);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.deleteFile(filePath, callback);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -2034,15 +1970,14 @@ shifu.util.writeFile('hello.txt', 'hello world blah blah', function () {
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.util.deleteFile('filetoDelete.txt', function (err) {
   if (err) {
     console.log('Error in deleting file');
   }
 });
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">deleteFile</code></em></strong></p>
 
@@ -2052,9 +1987,8 @@ shifu.util.deleteFile('filetoDelete.txt', function (err) {
 
 <p>This API allows to check if a directory exists. Returns true if directory exists, false otherwise.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.checkDirectoryExists(directoryPath);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.checkDirectoryExists(directoryPath);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -2077,11 +2011,10 @@ shifu.util.deleteFile('filetoDelete.txt', function (err) {
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.util.checkDirectoryExists('/home/data');
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">checkDirectoryExists</code></em></strong></p>
 
@@ -2090,9 +2023,8 @@ shifu.util.checkDirectoryExists('/home/data');
 
 <p>This API allows to check if a file exists. Returns true if file exists, false otherwise.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.util.checkFileExists(filePath);
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.util.checkFileExists(filePath);
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -2115,11 +2047,10 @@ shifu.util.checkDirectoryExists('/home/data');
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.util.checkFileExists('/home/data');
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Note the Use of <code class="highlighter-rouge">shifu.util</code> to access the method <code class="highlighter-rouge">checkFileExists</code></em></strong></p>
 
@@ -2129,13 +2060,12 @@ shifu.util.checkFileExists('/home/data');
 <h3 id="set-log-level---setloglevel">Set Log level - setLogLevel()</h3>
 <p>This API allows to set log level on Shifu</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.log.setLogLevel(logLevel); // when using Shifu
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.log.setLogLevel(logLevel); // when using Shifu
 
 or
 
 Logger.setLogLevel(logLevel); // when using Shifu-Logger
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>The following attributes are supported:</em></strong></p>
 
@@ -2158,15 +2088,14 @@ Logger.setLogLevel(logLevel); // when using Shifu-Logger
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.log.setLogLevel('debug');
 
 or
 
 curl -X GET http://localhost:8080/shifu/api/setloglevel/debug
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -2174,17 +2103,16 @@ curl -X GET http://localhost:8080/shifu/api/setloglevel/debug
 <h3 id="get-log-level---getloglevel">Get Log level - getLogLevel()</h3>
 <p>This API allows to get the current log level on Shifu</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.log.getLogLevel(); // when using Shifu
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.log.getLogLevel(); // when using Shifu
 
 or 
 
 Logger.getLogLevel(); // when using Shifu-Logger
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 
 shifu.log.getLogLevel();
 
@@ -2196,8 +2124,7 @@ Logger.getLogLevel();
 or
 
 curl -X GET http://localhost:8080/shifu/api/getloglevel
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
@@ -2205,17 +2132,16 @@ curl -X GET http://localhost:8080/shifu/api/getloglevel
 <h3 id="reset-log-level---resetloglevel">Reset Log level - resetLogLevel()</h3>
 <p>This API allows to reset the log level of Shifu to <code class="highlighter-rouge">info</code> (Default log level)</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>shifu.log.resetLogLevel();
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shifu.log.resetLogLevel();
 
 or 
 
 Logger.resetLogLevel();
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><strong><em>Example</em></strong></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>var shifu = require('shifu);
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var shifu = require('shifu);
 shifu.log.resetLogLevel();
 
 or
@@ -2226,8 +2152,7 @@ Logger.resetLogLevel();
 or 
 
 curl -X GET http://localhost:8080/shifu/api/resetloglevel
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <hr />
 
