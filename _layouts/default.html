@@ -21,8 +21,8 @@
 	
 	<header>
 		<a href="/">
-			<img src="{{site.data.assets.logo}}.png" class="logo" alt="Main Brand Logo"
-				 srcset="{{site.data.assets.logo}}@2x.png 2x, {{site.data.assets.logo}}@3x.png 3x">
+			<img src="{{site.baseurl}}/{{site.data.assets.logo}}.png" class="logo" alt="Main Brand Logo"
+				 srcset="{{site.baseurl}}/{{site.data.assets.logo}}@2x.png 2x, {{site.baseurl}}/{{site.data.assets.logo}}@3x.png 3x">
 		</a>
 		<form action="/search" method="get">
 			<input type="text" id="search-box" name="query" placeholder="Search" class="search-box">
@@ -38,9 +38,9 @@
 		<div class="nav-links">
 			<div class="nav-links__fleets">
 				<a class="nav-links__fleets-btn">
-					Fleets <img src="/images/arrow-down-icon.png" class="arrow-down-icon"
-								srcset="/images/arrow-down-icon@2x.png 2x,
-										/images/arrow-down-icon@3x.png 3x">
+					Fleets <img src="{{site.baseurl}}/images/arrow-down-icon.png" class="arrow-down-icon"
+								srcset="{{site.baseurl}}/images/arrow-down-icon@2x.png 2x,
+								{{site.baseurl}}/images/arrow-down-icon@3x.png 3x">
 				</a>
 				<div class="nav-links__fleets-content">
 					<a href="/">
@@ -57,13 +57,13 @@
 			<a href="{{site.data.global.SSPortalLink}}" target="_blank" class="nav-links__main-links">S.S. Portal</a>
 			{% endif %}
 			{% if site.data.global.faqs == true %}
-			<a href="/faq" class="nav-links__main-links">FAQ</a>
+			<a href="{{site.baseurl}}/faq" class="nav-links__main-links">FAQ</a>
 			{% endif %}
 			{% if site.data.global.contact == true %}
-			<a href="/contact" class="nav-links__main-links">Contact</a>
+			<a href="{{site.baseurl}}/contact" class="nav-links__main-links">Contact</a>
 			{% endif %}
 			{% if site.data.global.githubLink %}
-			<a href="{{site.data.global.githubLink}}" target="_blank" class="nav-links__main-links">GitHub</a>
+			<a href="{{site.baseurl}}/{site.data.global.githubLink}}" target="_blank" class="nav-links__main-links">GitHub</a>
 			{% endif %}
 		</div>
 	</header>
@@ -74,16 +74,16 @@
 
 	<footer>
 		<img class="left-footer-logo" alt="Left Footer Logo"
-			 src="{{site.data.assets.leftFooterLogo}}.png"
-			 srcset="{{site.data.assets.leftFooterLogo}}@2x.png 2x,
-					 {{site.data.assets.leftFooterLogo}}@3x.png 3x">
+			 src="{{site.baseurl}}/{{site.data.assets.leftFooterLogo}}.png"
+			 srcset="{{site.baseurl}}/{{site.data.assets.leftFooterLogo}}@2x.png 2x,
+			 {{site.baseurl}}/{{site.data.assets.leftFooterLogo}}@3x.png 3x">
 		{% if site.data.global.copyright %}
 		<span class="copyright">{{site.data.global.copyright}}</span>
 		{% endif %}
 		<img class="right-footer-logo" alt="Right Footer Logo"
-			 src="{{site.data.assets.rightFooterLogo}}.png"
-			 srcset="{{site.data.assets.rightFooterLogo}}@2x.png 2x,
-			 		 {{site.data.assets.rightFooterLogo}}@3x.png 3x">
+			 src="{{site.baseurl}}/{{site.data.assets.rightFooterLogo}}.png"
+			 srcset="{{site.baseurl}}/{{site.data.assets.rightFooterLogo}}@2x.png 2x,
+			 {{site.baseurl}}/{{site.data.assets.rightFooterLogo}}@3x.png 3x">
 	</footer>
 
 </body>
