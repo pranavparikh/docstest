@@ -91,8 +91,8 @@ layout: default
 </div>
 {% endif %}
 
-<script src="{{ "{{site.baseurl}}/js/jquery-3.3.1.min.js" | relative_url }}"></script>
-<script src="{{ "{{site.baseurl}}/js/slick.js" | relative_url }}"></script>
+<script src="{{site.baseurl}}/js/jquery-3.3.1.min.js"></script>
+<script src="{{site.baseurl}}/js/slick.js"></script>
 <script type="text/javascript">
 
 $('.carousel').slick({
