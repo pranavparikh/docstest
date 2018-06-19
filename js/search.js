@@ -93,7 +93,7 @@ function generateOutput(page) {
 function appendOutput(index) {
   var data = '';
   data += '<div class="search-result">';
-  data += '<a href={{site.baseurl}}"' + searchResultsArr[index].url + '" class="result-url">' + searchResultsArr[index].url.replace('/documentation/', '') + '</a>';
+  data += '<a href="{{site.baseurl}}' + searchResultsArr[index].url + '" class="result-url">' + searchResultsArr[index].url.replace('/documentation/', '') + '</a>';
   data += '<h3 class="result-title">' + searchResultsArr[index].title + '</h3>';
   data += '<p class="result-excerpt">' + searchResultsArr[index].excerpt + '</p>';
   data += '</div>';
