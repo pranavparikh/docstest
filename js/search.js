@@ -93,7 +93,7 @@ function generateOutput(page) {
 function appendOutput(index) {
   var data = '';
   data += '<div class="search-result">';
-  data += '<a href="' + searchResultsArr[index].url + '" class="result-url">' + searchResultsArr[index].url.replace('/documentation/', '') + '</a>';
+  data += '<a href={{site.baseurl}}"' + searchResultsArr[index].url + '" class="result-url">' + searchResultsArr[index].url.replace('/documentation/', '') + '</a>';
   data += '<h3 class="result-title">' + searchResultsArr[index].title + '</h3>';
   data += '<p class="result-excerpt">' + searchResultsArr[index].excerpt + '</p>';
   data += '</div>';
@@ -130,11 +130,11 @@ function appendPagination(currentPage) {
 }
 
 function getPrevIcon() {
-  return '<img src="/images/search/arrow-left-icon.png" srcset="/images/search/arrow-left-icon@2x.png 2x, /images/search/arrow-left-icon@3x.png 3x" />';
+  return '<img src="{{site.baseurl}}/images/search/arrow-left-icon.png" srcset="{{site.baseurl}}/images/search/arrow-left-icon%402x.png 2x, {{site.baseurl}}/images/search/arrow-left-icon%403x.png 3x" />';
 }
 
 function getNextIcon() {
-  return '<img src="/images/search/arrow-right-icon.png" srcset="/images/search/arrow-right-icon@2x.png 2x, /images/search/arrow-right-icon@3x.png 3x" />';
+  return '<img src="{{site.baseurl}}/images/search/arrow-right-icon.png" srcset="{{site.baseurl}}/images/search/arrow-right-icon%402x.png 2x, {{site.baseurl}}/images/search/arrow-right-icon%403x.png 3x" />';
 }
 
 function getResult(item, searchTerm) {
