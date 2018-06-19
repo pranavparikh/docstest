@@ -77,9 +77,9 @@ layout: default
 <div class="inner-container">
 	{% for feature in site.data.features %}
 	<div class="col-2 feature">
-		<img src="{{site.baseurl}}/{{feature.imgName}}.png"
-		     srcset="{{site.baseurl}}/{{feature.imgName}}@2x.png 2x,
-		             {{site.baseurl}}/{{feature.imgName}}@3x.png 3x"
+		<img src="{{site.baseurl}}{{feature.imgName}}.png"
+		     srcset="{{site.baseurl}}{{feature.imgName}}@2x.png 2x,
+		             {{site.baseurl}}{{feature.imgName}}@3x.png 3x"
 		     class="feature__img" alt="Feature icon">
 		<div class="feature__text">
 			<p class="feature__title">{{feature.title}}</p>
