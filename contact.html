@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div class="inner-container">
+	
+	<div class="breadcrumb">
+		<p>
+			<a class="breadcrumb__link" href="/">Home</a>
+			<img src="/images/arrow-right-icon.png"
+				 srcset="/images/arrow-right-icon@2x.png 2x,
+						 /images/arrow-right-icon@3x.png 3x"
+				 class="arrow-right-icon">
+			<span class="breadcrumb__current-page">Contact Us</span>
+		</p>
+	</div>
+
+	<h1 class="contact-title">Contact Us</h1>
+
+	{% if site.data.contact.text %}
+	<p class="contact-text">{{site.data.contact.text}}</p>
+	{% endif %}
+
+	{% if site.data.contact.slack %}
+	<div class="contact-row">
+		<div class="contact-col contact-col1">
+			<img src="./images/contact/slack-mark.png"
+			     srcset="./images/contact/slack-mark@2x.png 2x,
+						 ./images/contact/slack-mark@3x.png 3x"
+				 class="contact__img">
+		</div>
+		<div class="contact-col contact-col2">
+			<span class="contact__type">Slack</span>
+		</div>
+		<div class="contact-col contact-col3">
+			<span class="contact__info contact__info-no-link">{{site.data.contact.slack}}</span>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<hr class="contact__hr" />
+	{% endif %}
+
+	{% if site.data.contact.mail %}
+	<div class="contact-row">
+		<div class="contact-col contact-col1">
+			<img src="./images/contact/mail-icon.png"
+			     srcset="./images/contact/mail-icon@2x.png 2x,
+						 ./images/contact/mail-icon@3x.png 3x"
+				 class="contact__img">
+		</div>
+		<div class="contact-col contact-col2">
+			<span class="contact__type">Mail</span>
+		</div>
+		<div class="contact-col contact-col3">
+			<a href="mailto:{{site.data.contact.mail}}" class="contact__info">{{site.data.contact.mail}}</a>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<hr class="contact__hr" />
+	{% endif %}
+
+	{% if site.data.contact.jira %}
+	<div class="contact-row">
+		<div class="contact-col contact-col1">
+			<img src="./images/contact/jira.png"
+			     srcset="./images/contact/jira@2x.png 2x,
+						 ./images/contact/jira@3x.png 3x"
+				 class="contact__img">
+		</div>
+		<div class="contact-col contact-col2">
+			<span class="contact__type">Service Desk</span>
+		</div>
+		<div class="contact-col contact-col3">
+			<a href="{{site.data.contact.jira}}" target="_blank" class="contact__info">File a Support Ticket</a>
+		</div>
+	</div>
+	<div class="clear"></div>
+	{% endif %}
+
+</div>
