@@ -37,10 +37,10 @@ layout: default
 	<div class="carousel__card-bg">
 		<div class="carousel__card-fg">
 			<img src="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard.png"
-				 srcset="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@2x.png 2x,
-				 		 {{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@3x.png 3x"
+				 srcset="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard%402x.png 2x,
+				 		 {{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard%403x.png 3x"
 				 onerror="this.src='{{site.baseurl}}/images/fleets/default-placard.png';
-						  this.srcset='{{site.baseurl}}/images/fleets/default-placard@2x.png 2x, {{site.baseurl}}/images/default-placard@3x.png 3x'"
+						  this.srcset='{{site.baseurl}}/images/fleets/default-placard%402x.png 2x, {{site.baseurl}}/images/default-placard%403x.png 3x'"
 				 class="carousel__gear" />
 		</div>
 		<h3 class="carousel__title">{{prop.title}}</h3>
@@ -57,10 +57,10 @@ layout: default
 	<div class="carousel__card-bg">
 		<div class="carousel__card-fg">
 			<img src="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard.png"
-				 srcset="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@2x.png 2x,
-				 		 {{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard@3x.png 3x"
+				 srcset="{{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard%402x.png 2x,
+				 		 {{site.baseurl}}/{{site.data.index.documentationFolder}}/{{prop.title | replace: ' ', '%20'}}/images/placard%403x.png 3x"
 				 onerror="this.src='{{site.baseurl}}/images/fleets/default-placard.png';
-						  this.srcset='{{site.baseurl}}/images/fleets/default-placard@2x.png 2x, {{site.baseurl}}/images/default-placard@3x.png 3x'"
+						  this.srcset='{{site.baseurl}}/images/fleets/default-placard%402x.png 2x, {{site.baseurl}}/images/default-placard%403x.png 3x'"
 				 class="carousel__gear" />
 		</div>
 		<h3 class="carousel__title">{{prop.title}}</h3>
@@ -78,8 +78,8 @@ layout: default
 	{% for feature in site.data.features %}
 	<div class="col-2 feature">
 		<img src="{{site.baseurl}}{{feature.imgName}}.png"
-		     srcset="{{site.baseurl}}{{feature.imgName}}@2x.png 2x,
-		             {{site.baseurl}}{{feature.imgName}}@3x.png 3x"
+		     srcset="{{site.baseurl}}{{feature.imgName}}%402x.png 2x,
+		             {{site.baseurl}}{{feature.imgName}}%403x.png 3x"
 		     class="feature__img" alt="Feature icon">
 		<div class="feature__text">
 			<p class="feature__title">{{feature.title}}</p>
